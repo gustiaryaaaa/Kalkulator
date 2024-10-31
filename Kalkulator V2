@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double angka1, angka2, hasil;
+    char operasi;
+
+    cout << "Perjumlahan" << endl;
+    cout << "Masukkan Nilai-1: ";
+    cin >> angka1;
+    cout << "Masukkan Nilai-2: ";
+    cin >> angka2;
+
+    // Perhitungan semua operasi
+    hasil = angka1 + angka2;
+    cout << "HASILNYA :" << endl;
+    cout << "Hasil Penjumlahan: " << hasil << endl;
+
+    hasil = angka1 - angka2;
+    cout << "Hasil Pengurangan: " << hasil << endl;
+
+    hasil = angka1 * angka2;
+    cout << "Hasil Perkalian: " << hasil << endl;
+
+    if (angka2 != 0) {
+        hasil = angka1 / angka2;
+        cout << "Hasil Pembagian: " << hasil << endl;
+    } else {
+        cout << "Tidak dapat membagi dengan nol!" << endl;
+    }
+
+    return 0;
+}
